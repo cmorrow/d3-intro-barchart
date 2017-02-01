@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>D3: Bar Chart Divs</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <style>
+
+  .chart .bar {
+    position: relative;
+    background-color: steelblue;
+    height: 40px;
+    margin-top: 5px;    
+  }
+
+  .chart .bar .label {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    color: white;
+    font: 18px sans-serif;
+  }
+
+  .chart .bar .name {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    color: white;
+    font: 18px sans-serif;
+    opacity: .5;
+  }
+
+  </style>
+</head>
+
+<body><div class="demo-title">
+  <img src="images/d3-logo.png" class="logo">
+  <h1>Bar Chart</h1>
+  <h5>DIVs</h5>
+</div>
+
+<div class="demo">
+  <div class="chart"></div>
+</div>
+
+
+<script src="scripts/vendor/d3.js"></script>
+<script src="scripts/barchart-divs-complete.js"></script>
+</body>
+</html>

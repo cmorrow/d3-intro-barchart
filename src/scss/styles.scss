@@ -1,0 +1,117 @@
+// Variables
+// ----------------------------------------------------------------
+$max-width: 1200px;
+$gutter: 15px;
+$logo-width: 120px;
+
+$radius: 20px;
+
+* {
+	box-sizing: border-box;
+}
+
+.cf:before,
+	.cf:after {
+	    content: " "; /* 1 */
+	    display: table; /* 2 */
+	}
+	
+	.cf:after {
+	    clear: both;
+	}
+	
+	/**
+	 * For IE 6/7 only
+	 * Include this rule to trigger hasLayout and contain floats.
+	 */
+	.cf {
+	    *zoom: 1;
+	};
+
+.container {
+	margin: 0 auto;
+	width: 90%;
+	max-width: $max-width;
+}
+
+.green {
+ color:#00dd33;
+}
+
+.red {
+	color:red;
+}
+
+// Example titles
+.demo-title {
+	font-family: Arial;
+	@extend .container;
+	font-size: 36px;
+	font-weight:bold;
+	padding: $gutter;
+	border: solid 1px #ccc;
+	border-bottom:none;
+
+	@extend .cf;
+
+	h1 { 
+		float: right;
+		font-size: 64px;
+		margin:0;
+		color: #666;
+	}
+
+	h5 {
+		clear:right;
+		float:right;
+		color: #666;
+		margin:0;
+	}
+	
+
+	small { 
+		font-size: 24px;
+	}
+
+	.logo {
+		float:left;
+		width: $logo-width;
+	}
+}
+
+// Main demo container
+.demo {
+	@extend .container;
+	height: 550px;
+	padding: $gutter;
+	border: solid 1px #ccc;
+  border-radius: 0 0 $radius $radius;
+
+}
+
+.legend {
+	@extend .container;
+	@extend .cf;
+	font-family: Arial;
+	padding-top: $gutter;
+	font-size: 28px;
+	a {
+		text-decoration:none;
+		color: #fff;
+		font-size: 16px;
+		padding: 3px 5px;
+		border-radius: 3px;
+		background-color: #ccc;
+
+		&:hover {
+			background-color: #666;
+		}
+	}
+	.back {
+		float:left;
+	}
+
+	.next {
+		float:right;
+	}
+}

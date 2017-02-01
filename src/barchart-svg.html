@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>D3: Bar Chart</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta charset="utf-8">
+</head>
+<style>
+.chart {
+    width: 100%;
+}
+
+.chart rect {
+    fill: orange;
+}
+
+.chart text {
+    fill: white;
+    font: 18px sans-serif;
+    text-anchor: end;
+}
+</style>
+
+<body>
+    <div class="demo-title">
+        <img src="images/d3-logo.png" class="logo">
+        <h1>Bar Chart</h1>
+        <h5>SVG</h5>
+    </div>
+    <div class="demo">
+        <svg class="chart"></svg>
+    </div>
+    <div class="legend nav">
+        <a href="barchart-divs.html" class="back">back</a>
+        <a href="barchart-svg-responsive.html" class="next">next</a>
+    </div>
+    <script src="scripts/vendor/d3.js"></script>
+    <script src="scripts/barcharts-svg.js"></script>
+</body>
+
+</html>
